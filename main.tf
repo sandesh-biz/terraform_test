@@ -65,7 +65,7 @@ resource "aws_s3_bucket" "redb_bucket_res" {
 resource "aws_redshiftserverless_namespace" "redb_namespace_res" {
   namespace_name = "redb-namespace"
   admin_username = "admin"
-  admin_user_password = "Adminsandy123"
+  admin_user_password = "DummyDummy123"
   db_name = "dev"
   iam_roles = [ "${aws_iam_role.redb_role.arn}" ]
   default_iam_role_arn = "${aws_iam_role.redb_role.arn}"
